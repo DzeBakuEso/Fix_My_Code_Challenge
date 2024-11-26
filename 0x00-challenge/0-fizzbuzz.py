@@ -1,12 +1,10 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ FizzBuzz
 """
-
 import sys
 
 
 def fizzbuzz(n):
-
     """
     FizzBuzz function prints numbers from 1 to n separated by a space.
 
@@ -19,7 +17,7 @@ def fizzbuzz(n):
 
     tmp_result = []
     for i in range(1, n + 1):
-        if (i % 3 == 0) and (i % 5 == 0):  # Check if divisible by both 3 and 5
+        if (i % 3 == 0) and (i % 5 == 0):  # Check if divisible by both 3 and 5 first
             tmp_result.append("FizzBuzz")
         elif (i % 3 == 0):  # Check if divisible by 3
             tmp_result.append("Fizz")
@@ -27,7 +25,7 @@ def fizzbuzz(n):
             tmp_result.append("Buzz")
         else:
             tmp_result.append(str(i))
-
+    
     print(" ".join(tmp_result))
 
 
